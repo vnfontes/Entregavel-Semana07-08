@@ -1,13 +1,5 @@
-// =====================================================
-// Parte 1 - Criação do banco, da coleção e inserção
-// Executar: mongosh --file 01_insercao.js
-// (equivale a: use ecommerce_db)
-// =====================================================
 db = db.getSiblingDB("ecommerce_db");
-
-// Deixa o script reexecutável sem duplicar dados
 db.produtos.drop();
-
 db.produtos.insertMany([
   {
     titulo: "Notebook Ultrafino 14 polegadas",
